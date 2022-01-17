@@ -1,0 +1,65 @@
+:root {
+    --bg-color: #fff;
+    --text-color: rgb(99, 99, 99);
+    --wave-color:rgb(240, 240, 240);
+    --topnav:rgb(240, 240, 240);
+    --topnav-link:rgb(99, 99, 99);
+    --topnav-link-hover:rgb(223, 71, 51);
+    --navbar-icon: rgb(240, 240, 240);
+    --explore-btn:black;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #3F3F3F;
+    --text-color: rgb(252, 225, 209);
+    --wave-color:black;
+    --topnav:black;
+    --topnav-link:rgb(223, 71, 51);
+    --topnav-link-hover:rgb(139, 139, 139);
+    --navbar-icon: rgb(206, 206, 206);
+    --explore-btn:white;
+  }
+  .topnav{
+    background-color: var(--topnav);
+  }
+  .topnav a:link, .topnav a:visited{
+    color: var(--topnav-link);
+  }
+  .topnav a:hover,.topnav a:active{
+    color:var(--topnav-link-hover);
+  }
+  .navbar-light .navbar-toggler{
+     background-color: var(--navbar-icon);
+   }
+  #about{
+    border-bottom: 2px solid var(--bg-color);
+  }
+  .about-leftcol{
+    color:var(--text-color);
+  }  
+  .about-btn:hover{
+    color:var(--explore-btn);
+  }
+  #ocean{
+    background-color: var(--bg-color);
+  }
+  .wave{
+    background-color: var(--wave-color);
+  }
+  #accomp{
+    margin-bottom: -15px;
+    padding-bottom: 85px;
+  }
+  #accomp,#skills{
+    background-color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+  }
+  .accomp-description, .skill-col{
+    color:var(--text-color);
+  }
+  #footer{  
+    border: 2px solid solid var(--bg-color);
+  }
+  #waves{
+    background-color: var(--bg-color);
+  }

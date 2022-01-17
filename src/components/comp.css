@@ -1,0 +1,302 @@
+:root{
+  --orange:rgb(223, 71, 51);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+/*NAVBAR*/
+
+.navbar-light .navbar-toggler{
+  background-color: rgb(240, 240, 240);;
+}
+.topnav{
+  text-align: left;
+  z-index: 1;
+}
+.topnav a:link,.topnav a:visited{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    margin:2px 10px;
+} 
+
+/*ABOUT*/
+#about{
+  z-index: 1;
+  text-align: center;
+}
+.about-leftcol{
+  justify-content: center;
+}
+.about-hello{
+  margin-top: 85px;
+  margin-bottom: 15px;
+  font-size: 100px;
+  font-weight: bold;
+  color: var(--orange);
+}
+.hand-wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;      
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+  font-size: 70px;
+  margin: 2%;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+.about-description{
+  font-size: 30px;
+  margin-top: 12px;
+}
+.about-lottie{
+  height: 85%;
+}
+.abt-btn-container{
+  position: absolute;
+  margin-top: -6%;
+  margin-left: 24%;
+}
+.about-btn{
+  padding: 10px 25px;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+}
+.about-btn:hover{
+  border: 2px solid var(--orange);
+  background-color: transparent;
+}
+#ocean{
+   overflow: hidden;
+   position:relative;
+   z-index: -1;
+   display: flex;
+   width:100%;
+ } 
+  
+ .wave{  
+   display:flex;
+   height:100%;
+   width:10px;
+   position:absolute;
+   animation-name:             WaveKeyframe;
+   animation-duration:         3s;
+   animation-iteration-count:  infinite;
+   transition-timing-function: ease-in-out;
+ }
+  
+ @keyframes WaveKeyframe{
+   0%{
+     height:100%;
+   }
+   50%{
+     height:80%;
+   }
+   100%{
+     height: 100%;
+   }
+ }
+
+/*SKILLS*/
+#skills{
+  padding-top:4%;
+}
+.skill-header{
+  font-size: 50px;
+  color: var(--orange);
+  padding-bottom: 50px;
+}
+.skill-col{
+  font-size: 20px;
+  margin-bottom: 55px;
+}
+.bg-progress-skill{
+  background-color: #ff8c4a!important;
+}
+
+/*ACCOMPLISHMENTS*/
+#accomp{
+  padding-top:4%;
+  margin-bottom: 7%;
+}
+.accomp-header{
+  font-size: 50px;
+  color: var(--orange);
+  padding-bottom: 40px;
+}
+.accomp-description{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/*CONTACT*/
+#contact{
+  position: relative;
+  z-index: 1;
+  background-color: var(--orange); 
+  color:white; 
+  padding-bottom: 50px; 
+  text-align: center;
+  margin-top: -80px;
+  margin-left: -3px;
+}
+.contact-header{
+  margin-top:50px;
+  color:white;
+  font-size: 25px;
+}
+.contact-col a{
+  color: white;
+}
+.contact-col a:hover{
+  color: black;
+}
+
+/*FOOTER*/
+#footer {
+  justify-content: center;
+  width: 100%;
+  position:absolute;
+  background: var(--orange);
+  margin-top: 15px;
+  margin-left: 0px;
+  padding-bottom: 20%;
+}
+#waves {
+  z-index: -1;
+  width: 100%;
+  background: white;
+  border: transparent;
+  height: 50px;
+  margin: 0px;
+  padding-top: 250px;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes move {
+  0% {
+    padding-top: 0px;
+  }
+  50% {
+    padding-top: 0px;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+  width: 10px;
+  background:linear-gradient(rgb(240, 240, 240),white);
+}
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(#f83600,#ffae4a);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#ffae4a,#f83600)
+}
+
+@media only screen and (max-width: 600px) {
+  .topnav a:link{
+    margin:10px;
+    text-align: center;
+    justify-content: center;
+  }
+  .about-hello{
+    font-size: 70px;
+  } 
+  .hand-wave{
+    font-size: 50px;
+  }
+  .about-description{
+    font-size: 22px;
+  }
+  .abt-btn-container{
+    margin-top: -1%;
+    margin-left: 35%;
+  }
+  .skill-header, .accomp-header{
+   font-size: 30px;
+   padding-top: 38px;
+   padding-bottom: 15px;
+   text-align: justify;
+   text-justify: inter-word;
+ }
+ .skill-col{
+  font-size: 17px;
+  margin-bottom: 30px;
+  }
+ .accomp-description{
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  text-align: justify;
+   text-justify: inter-word;
+  }
+  .contact-header{
+    font-size: 20px;
+  }
+  .btn-container{
+    margin-top: 5px;
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+  .abt-btn-container{
+    margin-top: 1%;
+    margin-left: 42%;
+  }
+  #skills{
+    padding-top: 15%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .abt-btn-container{
+    margin-top: -6%;
+    margin-left: 45%;
+  }
+}
+.toggle-btn{
+    float: left;
+   margin: 2px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    text-align: center;
+    font-size: 4px;
+    justify-content: center;
+    position: sticky;
+}
+.btn-container{
+  padding-bottom: 3%;
+  margin-top: 5px;
+  margin-left: 85%;
+  position: absolute;
+  z-index: 5;
+}
