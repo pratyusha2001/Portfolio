@@ -13,6 +13,7 @@ const TopNav = () => {
                             <a href="#about">About Me</a>
                             <a href="#skills">Skills</a>
                             <a href="#accomp">Accomplishments</a>
+                            <a href="#projects">Projects</a>
                             <a href="#contact">Contact Me</a>
                         </Nav>
                     </Navbar.Collapse>

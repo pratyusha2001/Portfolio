@@ -10,7 +10,7 @@
 /*NAVBAR*/
 
 .navbar-light .navbar-toggler{
-  background-color: rgb(240, 240, 240);;
+  background-color: rgb(240, 240, 240);
 }
 .topnav{
   text-align: left;
@@ -123,17 +123,34 @@
   color: var(--orange);
   padding-bottom: 50px;
 }
-.skill-col{
-  font-size: 20px;
-  margin-bottom: 55px;
+.skills-col{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.bg-progress-skill{
-  background-color: #ff8c4a!important;
+.skill-card{
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border: 3px solid rgb(223, 71, 51);
+  border-radius: 15px;
+}
+.skill-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);;
+}
+.skills-img{
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5%;
 }
 
 /*ACCOMPLISHMENTS*/
 #accomp{
-  padding-top:4%;
+  padding-top:5%;
   margin-bottom: 7%;
 }
 .accomp-header{
@@ -146,6 +163,41 @@
   margin-bottom: 15px;
 }
 
+/*PROJECTS*/
+#projects{
+  padding-top:5%;
+  margin-bottom: 7%;
+}
+.project-header{
+  font-size: 50px;
+  color: var(--orange);
+  padding-bottom: 40px;
+}
+.project-card{
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border: 3px solid rgb(223, 71, 51);
+  border-radius: 15px;
+}
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.project-btn{
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: white;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+}
+.project-btn:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
 /*CONTACT*/
 #contact{
   position: relative;
@@ -168,7 +220,13 @@
 .contact-col a:hover{
   color: black;
 }
-
+.contact-mail{
+  text-decoration: none;
+}
+.contact-mail:hover{
+  color: rgb(63, 62, 62);
+  text-decoration: none;
+}
 /*FOOTER*/
 #footer {
   justify-content: center;
@@ -248,6 +306,11 @@
  .skill-col{
   font-size: 17px;
   margin-bottom: 30px;
+  }
+  .skill-card{
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 25px;
   }
  .accomp-description{
   font-size: 17px;
